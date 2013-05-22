@@ -1,0 +1,7 @@
+parameters:
+#    mdsr_studio.example.class: mdsr\StudioBundle\Example
+
+services:
+#    mdsr_studio.example:
+#        class: %mdsr_studio.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

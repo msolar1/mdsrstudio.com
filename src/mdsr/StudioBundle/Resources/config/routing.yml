@@ -1,0 +1,7 @@
+# mdsr_studio_homepage:
+#     pattern:  /hello/{name}
+#     defaults: { _controller: mdsrStudioBundle:Default:index }
+
+mdsr_studio_homepage:
+    pattern: /work
+    defaults: { _controller:mdsrStudioBundle:Default:work }

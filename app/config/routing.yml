@@ -1,0 +1,4 @@
+mdsr_studio:
+    resource: "@mdsrStudioBundle/Resources/config/routing.yml"
+    prefix:   /
+

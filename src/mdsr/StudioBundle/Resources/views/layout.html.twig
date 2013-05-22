@@ -1,0 +1,53 @@
+{% extends "::base.html.twig" %}
+
+{% block head %}
+    <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
+    <link rel="stylesheet" 
+          href="{{ asset('bundles/mdsrStudio/css/studio.css') }}" />
+{% endblock %}
+
+{% block title 'mdsr Studio Web' %}
+
+{% block body %}
+    <section id="logo">
+        <img src="{{ asset('Bundles/mdsrstudio/images/mdsr_studio_logo.png') }}" 
+             alt="mdsr studio logo image"
+             title="mdsr software studio by Mauricio Del Solar">
+        <img src="{{ asset ('Bundles/mdsrstudio/images/bg_logo_line.png') }}">
+        <span>by Mauricio Del Solar</span>
+    </section>
+    <nav>
+        <ul id="menu">
+            <li>
+                <a href="#">work</a>
+            </li>
+            
+            <li>
+                <a href="#">training</a>
+            </li>
+            
+            <li>
+                <a href="#">hire me</a>
+            </li>
+            
+            <li>
+                <a href="#">blog</a>
+            </li>
+
+            <li>
+                <a href="#">about</a>
+            </li>
+        </ul>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div id="language">
+            <a href="#">English</a>&nbsp;|&nbsp;
+            <a href="#">Español</a>&nbsp;|&nbsp;
+            <a href="#">Galego</a>
+        </div>
+        <p>&copy; 2013 - mdsr studio - All rights reserved.</p>
+    </footer>
+{% endblock %}
