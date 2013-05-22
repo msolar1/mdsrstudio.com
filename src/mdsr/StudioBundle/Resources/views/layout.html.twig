@@ -13,13 +13,12 @@
         <img src="{{ asset('Bundles/mdsrstudio/images/mdsr_studio_logo.png') }}" 
              alt="mdsr studio logo image"
              title="mdsr software studio by Mauricio Del Solar">
-        <img src="{{ asset ('Bundles/mdsrstudio/images/bg_logo_line.png') }}">
         <span>by Mauricio Del Solar</span>
     </section>
     <nav>
         <ul id="menu">
             <li>
-                <a href="#">work</a>
+                <a href="{{ path('mdsr_studio_work') }}">work</a>
             </li>
             
             <li>
@@ -35,7 +34,7 @@
             </li>
 
             <li>
-                <a href="#">about</a>
+                <a href="{{ path('mdsr_studio_about') }}">about</a>
             </li>
         </ul>
     </nav>
