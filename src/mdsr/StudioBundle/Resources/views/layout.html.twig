@@ -18,15 +18,27 @@
     <nav>
         <ul id="menu">
             <li>
-                <a href="{{ path('mdsr_studio_work') }}">work</a>
+                {% if menuLinkOff == 'work' %}
+                    work
+                {% else %}
+                    <a href="{{ path('mdsr_studio_work') }}">work</a>
+                {% endif %}
             </li>
             
             <li>
-                <a href="#">training</a>
+                {% if menuLinkOff == 'training' %}
+                    training
+                {% else %}
+                    <a href="#">training</a>
+                {% endif %}
             </li>
             
             <li>
-                <a href="#">hire me</a>
+                {% if menuLinkOff == 'hire me' %}
+                    hire me
+                {% else %}
+                    <a href="#">hire me</a>
+                {% endif %}
             </li>
             
             <li>
@@ -34,7 +46,11 @@
             </li>
 
             <li>
-                <a href="{{ path('mdsr_studio_about') }}">about</a>
+                {% if menuLinkOff == 'about' %}
+                    about
+                {% else %}
+                    <a href="{{ path('mdsr_studio_about') }}">about</a>
+                {% endif %}
             </li>
         </ul>
     </nav>
@@ -42,11 +58,127 @@
     {% block content %}{% endblock %}
 
     <footer>
-        <div id="language">
-            <a href="#">English</a>&nbsp;|&nbsp;
-            <a href="#">Español</a>&nbsp;|&nbsp;
-            <a href="#">Galego</a>
-        </div>
-        <p>&copy; 2013 - mdsr studio - All rights reserved.</p>
+        <section id="links">
+            <h1>Contact</h1>
+
+            <article id="contact">
+                <h1>Contact me</h1>
+                
+                <ul>
+                    <li>
+                        <a href="mailto:mdsr.pro@gmail.com">
+                            mdsr.pro@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:support@mdsrstudio.com">
+                            support@mdsrstudio.com
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="avaliability">
+                <h1>Avaliability: <em>{{ avaliabilityText }}</em></h1>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>0-2 days</th>
+                            <th>3-5 days</th>
+                            <th>6-10 days</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">
+                                <div id="bg-avaliability-bar"></div>
+                                <div id="avaliability-bar"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="follow">
+                <h1>Follow me</h1>
+                <ul>
+                    <li>
+                        linkedin
+                        <a href="#">
+                            <img src="linkedin_logo.png" 
+                                 alt="Linkedin logo image."
+                                 title="Go to Mauricio linkedin account.">
+                        </a>
+                    </li>
+                    <li>
+                        facebook
+                        <a href="#">
+                            <img src="facebook_logo.png" 
+                                 alt="Facebook logo image."
+                                 title="Go to mdsr studio facebook account.">
+                        </a>
+                    </li>
+                    <li>
+                        twitter
+                        <a href="#">
+                            <img src="twitter_logo.png" 
+                                 alt="Twitter logo image."
+                                 title="Go to mdsr studio twitter account.">
+                        </a>
+                    </li>
+                    <li>
+                        google+
+                        <a href="#">
+                            <img src="googleplus_logo.png" 
+                                 alt="Google+ logo image."
+                                 title="Go to mdsr studio google+ account.">
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="resume">
+                <p><em>mdsr studio</em> is...</p>
+                <a href="{{ path('mdsr_studio_about') }}">Read more...</a>
+            </article>
+        </section>
+
+        <section id="white">
+            <section id="funny-stats">
+                <div class="funny_stat">
+                    <strong>476</strong>
+                    <p>code lines written today.</p>
+                </div>
+
+                <div class="funny_stat">
+                    <strong>12</strong>
+                    <p>diapers changed this week.</p>
+                </div>
+
+                <div class="funny_stat">
+                    <strong>308</strong>
+                    <p>courses hours this year.</p>
+                </div>
+
+                <div class="funny_stat">
+                    <strong>5</strong>
+                    <p>songs listened today.</p>
+                </div>
+
+                <div class="funny_stat">
+                    <strong>61</strong>
+                    <p>bike km. this week.</p>
+                </div>
+            </section>
+
+            <section id="language">
+                <a href="#">English</a>&nbsp;|&nbsp;
+                <a href="#">Español</a>&nbsp;|&nbsp;
+                <a href="#">Galego</a>
+            </section>
+            
+            <p>&copy; 2013 - mdsr studio - All rights reserved.</p>
+        </section>
     </footer>
 {% endblock %}
