@@ -9,60 +9,68 @@
 {% block title 'mdsr Studio Web' %}
 
 {% block body %}
-    <section id="logo">
-        <img src="{{ asset('Bundles/mdsrstudio/images/mdsr_studio_logo.png') }}" 
-             alt="mdsr studio logo image"
-             title="mdsr software studio by Mauricio Del Solar">
-        <span>by Mauricio Del Solar</span>
-    </section>
-    <nav>
-        <ul id="menu">
-            <li>
+    <header>
+        <section id="logo">
+            <img src="{{ asset('Bundles/mdsrstudio/images/mdsr_studio_logo.png') }}" 
+                 alt="mdsr studio logo image"
+                 title="mdsr software studio by Mauricio Del Solar">
+            <span>by Mauricio Del Solar</span>
+        </section>
+        
+        <nav>
+            <ul id="menu">
                 {% if menuLinkOff == 'work' %}
-                    work
+                    <li class="menu-link-off">trabajo</li>
                 {% else %}
-                    <a href="{{ path('mdsr_studio_work') }}">work</a>
+                    <li><a href="{{ path('mdsr_studio_work') }}">trabajo</a></li>
                 {% endif %}
-            </li>
-            
-            <li>
+                
                 {% if menuLinkOff == 'training' %}
-                    training
+                    <li class="menu-link-off">formación</li>
                 {% else %}
-                    <a href="#">training</a>
+                    <li>
+                        <a href="{{ path('mdsr_studio_training') }}">
+                            formación
+                        </a>
+                    </li>
                 {% endif %}
-            </li>
-            
-            <li>
+                
                 {% if menuLinkOff == 'hire me' %}
-                    hire me
+                    <li class="menu-link-off">contrátame</li>
                 {% else %}
-                    <a href="#">hire me</a>
+                    <li>
+                        <a href="{{ path('mdsr_studio_hireme') }}">
+                            contrátame
+                        </a>
+                    </li>
                 {% endif %}
-            </li>
-            
-            <li>
-                <a href="#">blog</a>
-            </li>
+                
+                <li>
+                    <a href="#">blog</a>
+                </li>
 
-            <li>
                 {% if menuLinkOff == 'about' %}
-                    about
+                    <li class="menu-link-off">sobre mi</li>
                 {% else %}
-                    <a href="{{ path('mdsr_studio_about') }}">about</a>
+                    <li>
+                        <a href="{{ path('mdsr_studio_about') }}">sobre mi</a>
+                    </li>
                 {% endif %}
-            </li>
-        </ul>
-    </nav>
+            </ul>
+        </nav>
 
-    {% block content %}{% endblock %}
+    </header>
+
+    <section id="content">
+        {% block content %}{% endblock %}
+    </section>
 
     <footer>
         <section id="links">
-            <h1>Contact</h1>
+            <h1>Contacto</h1>
 
             <article id="contact">
-                <h1>Contact me</h1>
+                <h1>Contáctame</h1>
                 
                 <ul>
                     <li>
@@ -79,7 +87,7 @@
             </article>
 
             <article id="avaliability">
-                <h1>Avaliability: <em>{{ avaliabilityText }}</em></h1>
+                <h1>Mi disponibilidad: <em>{{ avaliabilityText }}</em></h1>
 
                 <table>
                     <thead>
@@ -101,7 +109,7 @@
             </article>
 
             <article id="follow">
-                <h1>Follow me</h1>
+                <h1>Sígueme</h1>
                 <ul>
                     <li>
                         linkedin
@@ -124,23 +132,21 @@
                         <a href="#">
                             <img src="twitter_logo.png" 
                                  alt="Twitter logo image."
-                                 title="Go to mdsr studio twitter account.">
-                        </a>
-                    </li>
-                    <li>
-                        google+
-                        <a href="#">
-                            <img src="googleplus_logo.png" 
-                                 alt="Google+ logo image."
-                                 title="Go to mdsr studio google+ account.">
+                                 title="Go to Mauricio twitter account.">
                         </a>
                     </li>
                 </ul>
             </article>
 
             <article id="resume">
-                <p><em>mdsr studio</em> is...</p>
-                <a href="{{ path('mdsr_studio_about') }}">Read more...</a>
+                <p>
+                    <em>mdsr studio</em> es la web personal del desarrollador y 
+                    formador freelance <em>Mauricio del Solar</em>. En ella 
+                    puedes encontrar información sobre él, sus trabajos, sus 
+                    cursos, etc.
+                </p>
+
+                <a href="{{ path('mdsr_studio_about') }}">Saber más...</a>
             </article>
         </section>
 
@@ -148,27 +154,27 @@
             <section id="funny-stats">
                 <div class="funny_stat">
                     <strong>476</strong>
-                    <p>code lines written today.</p>
+                    <p>lineas de código escritas hoy.</p>
                 </div>
 
                 <div class="funny_stat">
                     <strong>12</strong>
-                    <p>diapers changed this week.</p>
+                    <p>pañales cambiados esta semana.</p>
                 </div>
 
                 <div class="funny_stat">
                     <strong>308</strong>
-                    <p>courses hours this year.</p>
+                    <p>horas de cursos este año.</p>
                 </div>
 
                 <div class="funny_stat">
                     <strong>5</strong>
-                    <p>songs listened today.</p>
+                    <p>canciones escuchadas hoy.</p>
                 </div>
 
                 <div class="funny_stat">
-                    <strong>61</strong>
-                    <p>bike km. this week.</p>
+                    <strong>73</strong>
+                    <p>km. en bici esta semana.</p>
                 </div>
             </section>
 
@@ -178,7 +184,7 @@
                 <a href="#">Galego</a>
             </section>
             
-            <p>&copy; 2013 - mdsr studio - All rights reserved.</p>
+            <p>&copy; 2013 - mdsr studio - Todos los derechos reservados.</p>
         </section>
     </footer>
 {% endblock %}

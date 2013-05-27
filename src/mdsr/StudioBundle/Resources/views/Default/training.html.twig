@@ -1,0 +1,39 @@
+{% extends "mdsrStudioBundle::layout.html.twig" %}
+
+{% block content %}
+<h1>Mira mis últimos cursos</h1>
+
+<img src="bundles/mdsrstudio/images/chalkboard.png" 
+     alt="Training chalkboard image." 
+     title="Skills, Creativity, Innovation, Knowlege, Development.">
+
+<ul>
+    {% for course in courses %}
+        {% set startDate = course.startDate|date('Y') %}
+        {% set endDate = course.endDate|date('Y') %}
+
+        <li>
+            <article class="course">
+                <img src="{{ course.image }}" 
+                     alt="Course logo image" 
+                     title="Course logo image">
+                <h1>{{ course.title }}</h1>
+                <p class="course-content">{{ course.content }}</p>
+                <p>
+                    Organizador:&nbsp;
+                    <a href="{{ course.organizerLink }}">
+                        {{ course.organizer }}
+                    </a>-
+                    {{ course.place }}
+                    {% if startDate == endDate %}
+                          {{ startDate }}
+                    {% else %}
+                        {{ startDate }}/{{ endDate }}
+                    {% endif %}
+                </p>
+            </article>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

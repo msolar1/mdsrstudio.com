@@ -2,6 +2,14 @@ mdsr_studio_work:
     pattern: /work
     defaults: { _controller:mdsrStudioBundle:Default:work }
 
+mdsr_studio_training:
+    pattern: /training
+    defaults: { _controller:mdsrStudioBundle:Default:training }
+
+mdsr_studio_hireme:
+    pattern: /hire-me
+    defaults: { _controller:mdsrStudioBundle:Default:hireMe }
+
 mdsr_studio_about:
     pattern: /about
     defaults: { _controller:mdsrStudioBundle:Default:about }

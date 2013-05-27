@@ -31,6 +31,11 @@ class Course
     /**
      * @ORM\Column(type="string", length=100)
      */
+    protected $image;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
     protected $organizer;
 
     /**
@@ -153,6 +158,29 @@ class Course
     public function getOrganizerLink()
     {
         return $this->organizerLink;
+    }
+    
+    /**
+     * Set image
+     *
+     * @param string $image
+     * @return Course
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return string 
+     */
+    public function getImage()
+    {
+        return $this->image;
     }
 
     /**
