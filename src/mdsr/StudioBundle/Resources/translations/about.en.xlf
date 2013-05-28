@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>hello</source>
+                <target>Hello</target>
+            </trans-unit>
+
+            <trans-unit id="2">
+                <source>image.alt</source>
+                <target>
+                    Mauricio Del Solar image.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="3">
+                <source>image.title</source>
+                <target>
+                    Hello, my name is Mauricio.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>hello.p1</source>
+                <target>
+                    My name is &lt;em&gt;Mauricio&lt;/em&gt; and, if you don't know me 
+                    yet, I'm a computer engineer based in &lt;em&gt;Pontevedra&lt;/em&gt;
+                    , Spain.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="5">
+                <source>hello.p2</source>
+                <target>
+                    Current I work as a &lt;em&gt;developer&lt;/em&gt;, 
+                    &lt;em&gt;trainer&lt;/em&gt; and &lt;em&gt;consultant&lt;/em&gt;,
+                    and as I have always been interested in how people interact with 
+                    technology, in all my works deal that this interaction is as quick 
+                    and easy as possible. In this way I try to make simple and easy to 
+                    use apps.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="6">
+                <source>hello.p3</source>
+                <target>
+                    On the other hand, makes a couple of years now, I had the possibility to train new developers, both in the field of 
+                    &lt;em&gt;web applications&lt;/em&gt; as in the 
+                    &lt;em&gt;mobile iOS apps&lt;/em&gt; development.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="7">
+                <source>hello.p4</source>
+                <target>
+                    This new experience, as well as rewarding, helped me better understand my job as a developer, acquiring new knowlege and consolidating those I already had.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="8">
+                <source>hello.p5</source>
+                <target>
+                    If you haven't already done so, head over &lt;em&gt;work&lt;/em&gt; 
+                    or &lt;em&gt;training&lt;/em&gt; sections to see what I talking about.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="9">
+                <source>hello.p6</source>
+                <target>
+                    I will be happy to work with you.
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

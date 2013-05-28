@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>work.together</source>
+                <target>Let's work together...</target>
+            </trans-unit>
+
+            <trans-unit id="2">
+                <source>image.alt</source>
+                <target>
+                    My home map image.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="3">
+                <source>image.figcaption</source>
+                <target>
+                    I live here, but work where they need me 
+                </target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>development.header</source>
+                <target>Development</target>
+            </trans-unit>
+
+            <trans-unit id="5">
+                <source>development.p1</source>
+                <target>
+                    As it's not easy to cover all fields in the applications development, sometimes it's needed temporarily, specialized partners in a given subject.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="6">
+                <source>development.p2</source>
+                <target>
+                    If this is your case, maybe it's me the person who you need. If so 
+                    you feel free to contact me. I will be happy to listen your proposal.
+                    propuesta.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="7">
+                <source>training.header</source>
+                <target>Training</target>
+            </trans-unit>
+
+            <trans-unit id="8">
+                <source>training.p1</source>
+                <target>
+                    With the velocity from current technology evolution, it's easy to 
+                    stay behind. This is why the continuous training is the best strategy to keep updated.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="9">
+                <source>training.p2</source>
+                <target>
+                    If your work team needs a tune up, or just increase your knowlege, 
+                    you can get in touch with me. We can make together the training plan 
+                    that fits to your case.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="10">
+                <source>skills.header</source>
+                <target>Skills</target>
+            </trans-unit>
+
+            <trans-unit id="11">
+                <source>skills.p1</source>
+                <target>
+                    UX, Objective-C, iOS, Cocoa, Git, PHP5, Symfony2, HTML5, CSS3, 
+                    Javascript, jQuery, MySQL.
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

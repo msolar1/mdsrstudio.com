@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>footer.contact</source>
+                <target>Contacto</target>
+            </trans-unit>
+
+            <trans-unit id="2">
+                <source>footer.contactme</source>
+                <target>Contáctame</target>
+            </trans-unit>
+
+            <trans-unit id="3">
+                <source>footer.avaliability</source>
+                <target>Mi disponibilidad:</target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>footer.avaliability.busy</source>
+                <target>Ocupado</target>
+            </trans-unit>
+
+            <trans-unit id="5">
+                <source>footer.days</source>
+                <target>días</target>
+            </trans-unit>
+
+            <trans-unit id="6">
+                <source>footer.followme</source>
+                <target>Sígueme</target>
+            </trans-unit>
+
+            <trans-unit id="7">
+                <source>footer.resume1</source>
+                <target>
+                    es la web personal del desarrollador y formador freelance
+                </target>
+            </trans-unit>
+
+            <trans-unit id="8">
+                <source>footer.resume2</source>
+                <target>
+                    . En ella puedes encontrar información sobre él, sus trabajos, sus 
+                    cursos, etc.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="9">
+                <source>footer.more</source>
+                <target>Saber más...</target>
+            </trans-unit>
+
+            <trans-unit id="10">
+                <source>footer.stats.code</source>
+                <target>lineas de código escritas hoy.</target>
+            </trans-unit>
+
+            <trans-unit id="11">
+                <source>footer.stats.diapers</source>
+                <target>pañales cambiados esta semana.</target>
+            </trans-unit>
+
+            <trans-unit id="12">
+                <source>footer.stats.courses</source>
+                <target>horas de cursos este año.</target>
+            </trans-unit>
+
+            <trans-unit id="13">
+                <source>footer.stats.songs</source>
+                <target>canciones escuchadas hoy..</target>
+            </trans-unit>
+
+            <trans-unit id="14">
+                <source>footer.stats.bike</source>
+                <target>km. en bici esta semana.</target>
+            </trans-unit>
+
+            <trans-unit id="15">
+                <source>footer.rights</source>
+                <target>Todos los derechos reservados.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

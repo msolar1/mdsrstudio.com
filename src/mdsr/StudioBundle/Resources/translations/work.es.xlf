@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>cover.alt</source>
+                <target>Imagen de portada de mis trabajos</target>
+            </trans-unit>
+
+            <trans-unit id="2">
+                <source>cover.title</source>
+                <target>
+                    Portada con los trabajos de mdsr studio by Mauricio Del Solar.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="3">
+                <source>dincalc.alt</source>
+                <target>Imagen de Dincalc app.</target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>dincalc.title</source>
+                <target>
+                    Dincalc: la sencilla calculadora de incrementos/decrementos.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="5">
+                <source>smartket.alt</source>
+                <target>Imagen de Smartket app.</target>
+            </trans-unit>
+
+            <trans-unit id="6">
+                <source>smartket.title</source>
+                <target>Smartket: la aplicación de listas definitiva.</target>
+            </trans-unit>
+
+            <trans-unit id="7">
+                <source>basebook.alt</source>
+                <target>Imagen de Basebook app.</target>
+            </trans-unit>
+
+            <trans-unit id="8">
+                <source>basebook.title</source>
+                <target>Basebook: el conversor de bases más simple.</target>
+            </trans-unit>
+
+            <trans-unit id="9">
+                <source>dincalcplus.alt</source>
+                <target>Imagen de Dincalc Plus app.</target>
+            </trans-unit>
+
+            <trans-unit id="10">
+                <source>dincalcplus.title</source>
+                <target>
+                    Dincalc Plus: más opciones, más fácil, más Dincalc.
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

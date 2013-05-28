@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>work.together</source>
+                <target>Traballemos xuntos...</target>
+            </trans-unit>
+
+            <trans-unit id="2">
+                <source>image.alt</source>
+                <target>
+                    Imaxe do mapa da miña casa.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="3">
+                <source>image.figcaption</source>
+                <target>
+                    Eu vivo aquí, pero traballo alí onde me procuran...
+                </target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>development.header</source>
+                <target>Programación</target>
+            </trans-unit>
+
+            <trans-unit id="5">
+                <source>development.p1</source>
+                <target>
+                    Como non é doado cubrir tódolos campos no desenvolvemento de 
+                    aplicacións, as veces é preciso contar dunha maneira temporal, con 
+                    colaboradores especializados nunha determinada materia.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="6">
+                <source>development.p2</source>
+                <target>
+                    Se este é o teu caso, pode que sexa eu a persoa que precisas. Se 
+                    é así non dubides en contactarme. Estaréi encantado de escoitar a túa 
+                    proposta.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="7">
+                <source>training.header</source>
+                <target>Formación</target>
+            </trans-unit>
+
+            <trans-unit id="8">
+                <source>training.p1</source>
+                <target>
+                    Coa velocidade á que evoluciona a tecnoloxía actualmente, é 
+                    doado quedarse atrás. Por iso a formación continua é a mellor 
+                    estratexia para manterse actualizado.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="9">
+                <source>training.p2</source>
+                <target>
+                    Se o teu equipo de traballo precisa unha posta a punto, ou 
+                    simplemente queredes incrementar os vosos coñecementos, podedes 
+                    poñervos en contacto comigo. Xuntos poderemos confeccionar o plan de 
+                    formación que máis se axuste o voso caso.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="10">
+                <source>skills.header</source>
+                <target>Competencias</target>
+            </trans-unit>
+
+            <trans-unit id="11">
+                <source>skills.p1</source>
+                <target>
+                    UX, Objective-C, iOS, Cocoa, Git, PHP5, Symfony2, HTML5, CSS3, 
+                    Javascript, jQuery, MySQL.
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

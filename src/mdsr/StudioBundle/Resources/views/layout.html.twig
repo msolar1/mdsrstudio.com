@@ -20,27 +20,37 @@
         <nav>
             <ul id="menu">
                 {% if menuLinkOff == 'work' %}
-                    <li class="menu-link-off">trabajo</li>
+                    <li class="menu-link-off">
+                        {{ 'menu.work' | trans({}, 'header') }}
+                    </li>
                 {% else %}
-                    <li><a href="{{ path('mdsr_studio_work') }}">trabajo</a></li>
+                    <li>
+                        <a href="{{ path('mdsr_studio_work') }}">
+                            {{ 'menu.work' | trans({}, 'header') }}
+                        </a>
+                    </li>
                 {% endif %}
                 
                 {% if menuLinkOff == 'training' %}
-                    <li class="menu-link-off">formación</li>
+                    <li class="menu-link-off">
+                        {{ 'menu.training' | trans({}, 'header') }}
+                    </li>
                 {% else %}
                     <li>
                         <a href="{{ path('mdsr_studio_training') }}">
-                            formación
+                          {{ 'menu.training' | trans({}, 'header') }}  
                         </a>
                     </li>
                 {% endif %}
                 
                 {% if menuLinkOff == 'hire me' %}
-                    <li class="menu-link-off">contrátame</li>
+                    <li class="menu-link-off">
+                        {{ 'menu.hireme' | trans({}, 'header') }}
+                    </li>
                 {% else %}
                     <li>
                         <a href="{{ path('mdsr_studio_hireme') }}">
-                            contrátame
+                            {{ 'menu.hireme' | trans({}, 'header') }}
                         </a>
                     </li>
                 {% endif %}
@@ -50,10 +60,14 @@
                 </li>
 
                 {% if menuLinkOff == 'about' %}
-                    <li class="menu-link-off">sobre mi</li>
+                    <li class="menu-link-off">
+                        {{ 'menu.about' | trans({}, 'header') }}
+                    </li>
                 {% else %}
                     <li>
-                        <a href="{{ path('mdsr_studio_about') }}">sobre mi</a>
+                        <a href="{{ path('mdsr_studio_about') }}">
+                            {{ 'menu.about' | trans({}, 'header') }}
+                        </a>
                     </li>
                 {% endif %}
             </ul>
@@ -67,10 +81,10 @@
 
     <footer>
         <section id="links">
-            <h1>Contacto</h1>
+            <h1>{{ 'footer.contact' | trans({}, 'footer') }}</h1>
 
             <article id="contact">
-                <h1>Contáctame</h1>
+                <h1>{{ 'footer.contactme' | trans({}, 'footer') }}</h1>
                 
                 <ul>
                     <li>
@@ -87,14 +101,25 @@
             </article>
 
             <article id="avaliability">
-                <h1>Mi disponibilidad: <em>{{ avaliabilityText }}</em></h1>
+                <h1>
+                    {{ 'footer.avaliability' | trans({}, 'footer') }} 
+                    <em>{{ avaliabilityText }}</em>
+                </h1>
 
                 <table>
                     <thead>
                         <tr>
-                            <th>0-2 days</th>
-                            <th>3-5 days</th>
-                            <th>6-10 days</th>
+                            <th>
+                                0-2 {{ 'footer.days' | trans({}, 'footer') }}
+                            </th>
+                            
+                            <th>
+                                3-5 {{ 'footer.days' | trans({}, 'footer') }}
+                            </th>
+                            
+                            <th>
+                                6-10 {{ 'footer.days' | trans({}, 'footer') }}
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -109,7 +134,7 @@
             </article>
 
             <article id="follow">
-                <h1>Sígueme</h1>
+                <h1>{{ 'footer.followme' | trans({}, 'footer') }}</h1>
                 <ul>
                     <li>
                         linkedin
@@ -140,13 +165,14 @@
 
             <article id="resume">
                 <p>
-                    <em>mdsr studio</em> es la web personal del desarrollador y 
-                    formador freelance <em>Mauricio del Solar</em>. En ella 
-                    puedes encontrar información sobre él, sus trabajos, sus 
-                    cursos, etc.
+                    <em>mdsr studio</em> 
+                    {{ 'footer.resume1' | trans({}, 'footer') }} <em>Mauricio 
+                    del Solar</em>{{ 'footer.resume2' | trans({}, 'footer') }}
                 </p>
 
-                <a href="{{ path('mdsr_studio_about') }}">Saber más...</a>
+                <a href="{{ path('mdsr_studio_about') }}">
+                    {{ 'footer.more' | trans({}, 'footer') }}
+                </a>
             </article>
         </section>
 
@@ -154,37 +180,48 @@
             <section id="funny-stats">
                 <div class="funny_stat">
                     <strong>476</strong>
-                    <p>lineas de código escritas hoy.</p>
+                    <p>{{ 'footer.stats.code' | trans({}, 'footer') }}</p>
                 </div>
 
                 <div class="funny_stat">
                     <strong>12</strong>
-                    <p>pañales cambiados esta semana.</p>
+                    <p>{{ 'footer.stats.diapers' | trans({}, 'footer') }}</p>
                 </div>
 
                 <div class="funny_stat">
                     <strong>308</strong>
-                    <p>horas de cursos este año.</p>
+                    <p>{{ 'footer.stats.courses' | trans({}, 'footer') }}</p>
                 </div>
 
                 <div class="funny_stat">
                     <strong>5</strong>
-                    <p>canciones escuchadas hoy.</p>
+                    <p>{{ 'footer.stats.songs' | trans({}, 'footer') }}</p>
                 </div>
 
                 <div class="funny_stat">
                     <strong>73</strong>
-                    <p>km. en bici esta semana.</p>
+                    <p>{{ 'footer.stats.bike' | trans({}, 'footer') }}</p>
                 </div>
             </section>
 
             <section id="language">
-                <a href="#">English</a>&nbsp;|&nbsp;
-                <a href="#">Español</a>&nbsp;|&nbsp;
-                <a href="#">Galego</a>
+                <a href="{{ path('mdsr_studio_work', { '_locale': 'en' }) }}">
+                    English
+                </a>&nbsp;|&nbsp;
+                
+                <a href="{{ path('mdsr_studio_work', { '_locale': 'es' }) }}">
+                    Español
+                </a>&nbsp;|&nbsp;
+                
+                <a href="{{ path('mdsr_studio_work', { '_locale': 'gl' }) }}">
+                    Galego
+                </a>
             </section>
             
-            <p>&copy; 2013 - mdsr studio - Todos los derechos reservados.</p>
+            <p>
+                &copy; 2013 - mdsr studio - 
+                {{ 'footer.rights' | trans({}, 'footer') }}
+            </p>
         </section>
     </footer>
 {% endblock %}

@@ -1,10 +1,10 @@
 {% extends "mdsrStudioBundle::layout.html.twig" %}
 
 {% block content %}
-<h1>Mira mis últimos cursos</h1>
+<h1>{{ 'last.courses' | trans({}, 'training') }}</h1>
 
 <img src="bundles/mdsrstudio/images/chalkboard.png" 
-     alt="Training chalkboard image." 
+     alt="{{ 'last.courses' | trans({}, 'training') }}" 
      title="Skills, Creativity, Innovation, Knowlege, Development.">
 
 <ul>
@@ -20,7 +20,7 @@
                 <h1>{{ course.title }}</h1>
                 <p class="course-content">{{ course.content }}</p>
                 <p>
-                    Organizador:&nbsp;
+                    {{ 'organizer' | trans({}, 'training') }}
                     <a href="{{ course.organizerLink }}">
                         {{ course.organizer }}
                     </a>-

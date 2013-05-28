@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>hello</source>
+                <target>Hola</target>
+            </trans-unit>
+
+            <trans-unit id="2">
+                <source>image.alt</source>
+                <target>
+                    Imagen de Mauricio Del Solar.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="3">
+                <source>image.title</source>
+                <target>
+                    Hola, mi nombre es Mauricio Del Solar
+                </target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>hello.p1</source>
+                <target>
+                    Mi nombre es &lt;em&gt;Mauricio&lt;/em&gt; y, si todavía no me 
+                    conoces, soy un ingeniero en informática con base en &lt;em&gt;
+                    Pontevedra&lt;/em&gt;, España.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="5">
+                <source>hello.p2</source>
+                <target>
+                    Actualmente trabajo como &lt;em&gt;programador&lt;/em&gt;, 
+                    &lt;em&gt;formador&lt;/em&gt; y &lt;em&gt;consultor&lt;/em&gt;, y 
+                    como siempre me ha interesado la forma en la que las personas interactúan con la tecnología, en todos mis trabajos intento que esa interacción sea lo más simple y rápida posible. De esta forma intento crear aplicaciones sencillas y fáciles de usar.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="6">
+                <source>hello.p3</source>
+                <target>
+                    Por otro lado, hace ya un par de años, me surgió la posibilidad 
+                    de formar a nuevos programadores, tanto en el campo del desarrollo de 
+                    &lt;em&gt;aplicaciones web&lt;/em&gt; como de &lt;em&gt;aplicaciones 
+                    móviles iOS&lt;/em&gt;. 
+                </target>
+            </trans-unit>
+
+            <trans-unit id="7">
+                <source>hello.p4</source>
+                <target>
+                    Esta nueva experiencia, además de gratificante, me ha ayudado a 
+                    comprender mejor mi trabajo como desarrollador, adquiriendo 
+                    nuevos conocimientos y consolidando los que ya poseía.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="8">
+                <source>hello.p5</source>
+                <target>
+                    Si todavía no lo has hecho, pásate por la sección 
+                    &lt;em&gt;trabajos&lt;/em&gt; o &lt;em&gt;formación&lt;/em&gt; para 
+                    ver de lo que te estoy hablando.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="9">
+                <source>hello.p6</source>
+                <target>
+                    Estaré encantado de trabajar contigo.
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

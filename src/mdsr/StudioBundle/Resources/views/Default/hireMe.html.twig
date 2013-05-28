@@ -1,57 +1,35 @@
 {% extends "mdsrStudioBundle::layout.html.twig" %}
 
 {% block content %}
-    <h1>Let's work together...</h1>
+    <h1>{{ 'work.together' | trans({}, 'hireme') }}</h1>
 
     <figure>
         <img src="bundles/mdsrstudio/images/home_map.png" 
-             alt="My home map image" 
-             title="Yo vivo aquí, pero trabajo donde me necesitan...">
+             alt="{{ 'image.alt' | trans({}, 'hireme') }}" 
+             title="{{ 'image.figcaption' | trans({}, 'hireme') }}">
 
         <figcaption>
-            Yo vivo aquí, pero trabajo donde me necesitan...
+            {{ 'image.figcaption' | trans({}, 'hireme') }}
         </figcaption>
     </figure>
 
     <article id="development">
-        <h1>Programación</h1>
+        <h1>{{ 'development.header' | trans({}, 'hireme') }}</h1>
 
-        <p>
-            Como no es fácil cubrir todos los campos en el desarrollo de 
-            aplicaciones, a veces, es necesario contar de forma temporal, con 
-            colaboradores especializados en una determinada materia.
-        </p>
-
-        <p>
-            Si este es tu caso, puede que sea yo la persona que necesites. Si 
-            es así no dudes en contactarme. Estaré encantado de escuchar tu 
-            propuesta.
-        </p>
+        <p>{{ 'development.p1' | trans({}, 'hireme') }}</p>
+        <p>{{ 'development.p2' | trans({}, 'hireme') }}</p>
     </article>
 
     <article id="training">
-        <h1>Formación</h1>
+        <h1>{{ 'training.header' | trans({}, 'hireme') }}</h1>
 
-        <p>
-            Con la velocidad a la que evoluciona la tecnología actualmente, es 
-            fácil quedarse atrás. Por eso la formación continua es la mejor 
-            estrategia para mantenerse actualizado.
-        </p>
-
-        <p>
-            Si tu equipo de trabajo necesita una puesta a punto, o simplemente 
-            queréis incrementar vuestros conociemientos, podéis poneros en 
-            contacto conmigo. Juntos podremos confeccionar el plan de formación 
-            que más se ajuste a vuestro caso.
-        </p>
+        <p>{{ 'training.p1' | trans({}, 'hireme') }}</p>
+        <p>{{ 'training.p2' | trans({}, 'hireme') }}</p>
     </article>
 
     <article id="skills">
-        <h1>Competencias</h1>
+        <h1>{{ 'skills.header' | trans({}, 'hireme') }}</h1>
 
-        <p>
-            UX, Objective-C, iOS, Cocoa, Git, PHP5, HTML5, CSS3, Javascript, 
-            jQuery, MySQL.
-        </p>
+        <p>{{ 'skills.p1' | trans({}, 'hireme') }}</p>
     </article>
 {% endblock %}
