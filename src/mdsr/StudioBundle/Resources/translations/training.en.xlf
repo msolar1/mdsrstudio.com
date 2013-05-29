@@ -9,9 +9,7 @@
 
             <trans-unit id="2">
                 <source>image.alt</source>
-                <target>
-                    Training related words chalkboard image.
-                </target>
+                <target>Training related words chalkboard image.</target>
             </trans-unit>
 
             <trans-unit id="3">

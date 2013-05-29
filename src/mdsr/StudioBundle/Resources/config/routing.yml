@@ -1,28 +1,27 @@
-# _mdsr_studio_work:
-#        pattern:  /
-#        defaults: { _controller: FrameworkBundle:Redirect:redirect,
-#                    route: mdsr_studio_work }
+_mdsr_studio_work:
+    pattern: /
+    defaults: { _controller:FrameworkBundle:Redirect:redirect, route: mdsr_studio_work }
 
 mdsr_studio_work:
-    pattern: /{_locale}/work
+    pattern: /{_locale}/work/
     defaults: { _controller:mdsrStudioBundle:Default:work, _locale: es }
     requirements:
         _locale: es|en|gl
 
 mdsr_studio_training:
-    pattern: /{_locale}/training
+    pattern: /{_locale}/training/
     defaults: { _controller:mdsrStudioBundle:Default:training, _locale: es }
     requirements:
         _locale: es|en|gl
 
 mdsr_studio_hireme:
-    pattern: /{_locale}/hire-me
-    defaults: { _controller:mdsrStudioBundle:Default:hireMe, _locale: es }
+    pattern: /{_locale}/hire/
+    defaults: { _controller:mdsrStudioBundle:Default:hire, _locale: es }
     requirements:
         _locale: es|en|gl
 
 mdsr_studio_about:
-    pattern: /{_locale}/about
+    pattern: /{_locale}/about/
     defaults: { _controller:mdsrStudioBundle:Default:about, _locale: es }
     requirements:
         _locale: es|en|gl

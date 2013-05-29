@@ -9,9 +9,7 @@
 
             <trans-unit id="2">
                 <source>image.alt</source>
-                <target>
-                    Imagen de una pizarra con palabras relacionadas con la formación.
-                </target>
+                <target>Imagen de una pizarra con palabras relacionadas con la formación.</target>
             </trans-unit>
 
             <trans-unit id="3">

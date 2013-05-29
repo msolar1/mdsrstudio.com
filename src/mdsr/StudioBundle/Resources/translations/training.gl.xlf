@@ -9,9 +9,7 @@
 
             <trans-unit id="2">
                 <source>image.alt</source>
-                <target>
-                    Imaxe de una lousa con palabras relacionadas con a formación.
-                </target>
+                <target>Imaxe de una lousa con palabras relacionadas con a formación.</target>
             </trans-unit>
 
             <trans-unit id="3">

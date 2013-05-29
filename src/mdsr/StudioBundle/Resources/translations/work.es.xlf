@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" datatype="plaintext" original="file.ext">
+    <file source-language="es" datatype="plaintext" original="file.ext">
         <body>
             <trans-unit id="1">
                 <source>cover.alt</source>
@@ -9,9 +9,7 @@
 
             <trans-unit id="2">
                 <source>cover.title</source>
-                <target>
-                    Portada con los trabajos de mdsr studio by Mauricio Del Solar.
-                </target>
+                <target>Portada con los trabajos de mdsr studio by Mauricio Del Solar.</target>
             </trans-unit>
 
             <trans-unit id="3">
@@ -21,9 +19,7 @@
 
             <trans-unit id="4">
                 <source>dincalc.title</source>
-                <target>
-                    Dincalc: la sencilla calculadora de incrementos/decrementos.
-                </target>
+                <target>Dincalc: la sencilla calculadora de incrementos/decrementos.</target>
             </trans-unit>
 
             <trans-unit id="5">
@@ -53,9 +49,7 @@
 
             <trans-unit id="10">
                 <source>dincalcplus.title</source>
-                <target>
-                    Dincalc Plus: más opciones, más fácil, más Dincalc.
-                </target>
+                <target>Dincalc Plus: más opciones, más fácil, más Dincalc.</target>
             </trans-unit>
         </body>
     </file>

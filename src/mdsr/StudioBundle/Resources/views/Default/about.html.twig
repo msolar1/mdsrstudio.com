@@ -1,21 +1,22 @@
- {% extends "mdsrStudioBundle::layout.html.twig" %}
+{% extends "mdsrStudioBundle::layout.html.twig" %}
+{% trans_default_domain 'about' %}
 
 {% block content %}
     <h1>{{ 'hello' | trans({}, 'about') }}</h1>
 
-    <img src="bundles/mdsrstudio/images/me_myself.png"
-     alt="{{ 'image.alt' | trans({}, 'about') }}"
-     title="{{ 'image.title' | trans({}, 'about') }}">
+    <img src="{{ asset('bundles/mdsrstudio/images/me_myself.png') }}" 
+		 alt="{{ 'image.alt' | trans }}" 
+		 title="{{ 'image.title' | trans }}">
     
     <article class="hello-column">
-        <p>{{ 'hello.p1' | trans({}, 'about') | raw }}</p>
-        <p>{{ 'hello.p2' | trans({}, 'about') | raw }}</p>
+        <p>{{ 'hello.p1' | trans | raw }}</p>
+        <p>{{ 'hello.p2' | trans | raw }}</p>
     </article>
 
     <article class="hello-column">
-        <p>{{ 'hello.p3' | trans({}, 'about') | raw }}</p>
-        <p>{{ 'hello.p4' | trans({}, 'about') | raw }}</p>
-        <p>{{ 'hello.p5' | trans({}, 'about') | raw }}</p>
-        <p>{{ 'hello.p6' | trans({}, 'about') | raw }}</p>
+        <p>{{ 'hello.p3' | trans | raw }}</p>
+        <p>{{ 'hello.p4' | trans | raw }}</p>
+        <p>{{ 'hello.p5' | trans | raw }}</p>
+        <p>{{ 'hello.p6' | trans | raw }}</p>
     </article>
 {% endblock %}

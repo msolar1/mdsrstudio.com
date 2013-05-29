@@ -34,50 +34,40 @@
 
             <trans-unit id="7">
                 <source>footer.resume1</source>
-                <target>
-                    e a web personal do programador e formador
-                </target>
+                <target>&lt;em&gt;mdsr studio&lt;/em&gt; é a web personal do programador e formador &lt;em&gt;Mauricio del Solar&lt;/em&gt; . Nela podes atopar información sobre él, o seu traballo, os seus cursos, etc.</target>
             </trans-unit>
 
             <trans-unit id="8">
-                <source>footer.resume2</source>
-                <target>
-                    . Nela podes atopar información sobre él, o seu traballo, os seus
-                    cursos, etc.
-                </target>
-            </trans-unit>
-
-            <trans-unit id="9">
                 <source>footer.more</source>
                 <target>Saber máis...</target>
             </trans-unit>
 
-            <trans-unit id="10">
+            <trans-unit id="9">
                 <source>footer.stats.code</source>
                 <target>liñas de código escritas hoxe.</target>
             </trans-unit>
 
-            <trans-unit id="11">
+            <trans-unit id="10">
                 <source>footer.stats.diapers</source>
                 <target>cuieros cambiados esta semana.</target>
             </trans-unit>
 
-            <trans-unit id="12">
+            <trans-unit id="11">
                 <source>footer.stats.courses</source>
                 <target>horas de cursos este ano.</target>
             </trans-unit>
 
-            <trans-unit id="13">
+            <trans-unit id="12">
                 <source>footer.stats.songs</source>
                 <target>cancións escoitadas hoxe.</target>
             </trans-unit>
 
-            <trans-unit id="14">
+            <trans-unit id="13">
                 <source>footer.stats.bike</source>
                 <target>km. de bici esta semana.</target>
             </trans-unit>
 
-            <trans-unit id="15">
+            <trans-unit id="14">
                 <source>footer.rights</source>
                 <target>Todos os dereitos reservados.</target>
             </trans-unit>

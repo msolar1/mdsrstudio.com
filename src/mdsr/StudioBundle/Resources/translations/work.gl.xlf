@@ -9,9 +9,7 @@
 
             <trans-unit id="2">
                 <source>cover.title</source>
-                <target>
-                    Portada cos traballos de mdsr studio by Mauricio Del Solar.
-                </target>
+                <target>Portada cos traballos de mdsr studio by Mauricio Del Solar.</target>
             </trans-unit>
 
             <trans-unit id="3">
@@ -21,9 +19,7 @@
 
             <trans-unit id="4">
                 <source>dincalc.title</source>
-                <target>
-                    Dincalc: a sinxela calculadora de incrementos/decrementos.
-                </target>
+                <target>Dincalc: a sinxela calculadora de incrementos/decrementos.</target>
             </trans-unit>
 
             <trans-unit id="5">
@@ -53,9 +49,7 @@
 
             <trans-unit id="10">
                 <source>dincalcplus.title</source>
-                <target>
-                    Dincalc Plus: máis opcións, máis doado, máis Dincalc.
-                </target>
+                <target>Dincalc Plus: máis opcións, máis doado, máis Dincalc.</target>
             </trans-unit>
         </body>
     </file>

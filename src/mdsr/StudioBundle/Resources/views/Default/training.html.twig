@@ -1,10 +1,11 @@
 {% extends "mdsrStudioBundle::layout.html.twig" %}
+{% trans_default_domain 'training' %}
 
 {% block content %}
-<h1>{{ 'last.courses' | trans({}, 'training') }}</h1>
+<h1>{{ 'last.courses' | trans }}</h1>
 
-<img src="bundles/mdsrstudio/images/chalkboard.png" 
-     alt="{{ 'last.courses' | trans({}, 'training') }}" 
+<img src="{{ asset('bundles/mdsrstudio/images/chalkboard.png') }}" 
+     alt="{{ 'last.courses' | trans }}" 
      title="Skills, Creativity, Innovation, Knowlege, Development.">
 
 <ul>
@@ -14,13 +15,13 @@
 
         <li>
             <article class="course">
-                <img src="{{ course.image }}" 
+                <img src="{{ asset('bundles/mdsrstudio/images/' ~ course.image) }}" 
                      alt="Course logo image" 
                      title="Course logo image">
                 <h1>{{ course.title }}</h1>
                 <p class="course-content">{{ course.content }}</p>
                 <p>
-                    {{ 'organizer' | trans({}, 'training') }}
+                    {{ 'organizer' | trans }}
                     <a href="{{ course.organizerLink }}">
                         {{ course.organizer }}
                     </a>-

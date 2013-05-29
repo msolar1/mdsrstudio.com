@@ -1,0 +1,36 @@
+{% extends "mdsrStudioBundle::layout.html.twig" %}
+{% trans_default_domain 'hire' %}
+
+{% block content %}
+    <h1>{{ 'work.together' | trans }}</h1>
+
+    <figure>
+        <img src="{{ asset('bundles/mdsrstudio/images/my_home_map.png') }}" 
+             alt="{{ 'image.alt' | trans({}, 'hire') }}" 
+             title="{{ 'image.figcaption' | trans({}, 'hire') }}">
+
+        <figcaption>
+            {{ 'image.figcaption' | trans }}
+        </figcaption>
+    </figure>
+
+    <article id="development">
+        <h1>{{ 'development.header' | trans }}</h1>
+
+        <p>{{ 'development.p1' | trans }}</p>
+        <p>{{ 'development.p2' | trans }}</p>
+    </article>
+
+    <article id="training">
+        <h1>{{ 'training.header' | trans({}, 'hire') }}</h1>
+
+        <p>{{ 'training.p1' | trans }}</p>
+        <p>{{ 'training.p2' | trans }}</p>
+    </article>
+
+    <article id="skills">
+        <h1>{{ 'skills.header' | trans }}</h1>
+
+        <p>{{ 'skills.p1' | trans }}</p>
+    </article>
+{% endblock %}

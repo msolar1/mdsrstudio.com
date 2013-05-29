@@ -1,42 +1,43 @@
 {% extends "mdsrStudioBundle::layout.html.twig" %}
+{% trans_default_domain 'work' %}
 
 {% block content %}
-    <img src="Bundles/mdsrstudio/images/work_cover.png"
-         alt="{{ 'cover.alt' | trans({}, 'work') }}"
-         title="{{ 'cover.title' | trans({}, 'work') }}">
+    <img src="{{ asset('bundles/mdsrstudio/images/work_cover.png') }}"
+         alt="{{ 'cover.alt' | trans }}"
+         title="{{ 'cover.title' | trans }}">
 
     <section id="showroom">
         <nav id="ios-apps">
             <ul>
                 <li>
                     <a href="#">
-                        <img src="Bundles/mdsrstudio/images/dincalc_icon.png" 
-                             alt="{{ 'dincalc.alt' | trans({}, 'work') }}"
-                             title="{{ 'dincalc.title' | trans({}, 'work') }}">
+                        <img src="{{ asset('bundles/mdsrstudio/images/dincalc_icon.png') }}"
+                             alt="{{ 'dincalc.alt' | trans }}"
+                             title="{{ 'dincalc.title' | trans }}">
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="Bundles/mdsrstudio/images/smartket_icon.png" 
-                             alt="{{ 'smartket.alt' | trans({}, 'work') }}"
-                             title="{{ 'smartket.title' | trans({}, 'work') }}">
+                        <img src="{{ asset('bundles/mdsrstudio/images/smartket_icon.png') }}"
+                             alt="{{ 'smartket.alt' | trans }}"
+                             title="{{ 'smartket.title' | trans }}">
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="Bundles/mdsrstudio/images/basebook_icon.png" 
-                             alt="{{ 'basebook.alt' | trans({}, 'work') }}"
-                             title="{{ 'basebook.title' | trans({}, 'work') }}">
+                        <img src="{{ asset('bundles/mdsrstudio/images/basebook_icon.png') }}"
+                             alt="{{ 'basebook.alt' | trans }}"
+                             title="{{ 'basebook.title' | trans }}">
                     </a>
                 </li>
-                
+
                 <li>
                     <a href="#">
-                        <img src="Bundles/mdsrstudio/images/dincalc_plus_icon.png" 
-                             alt="{{ 'dincalcplus.alt' | trans({}, 'work') }}"
-                             title="{{ 'dincalcplus.title' | trans({}, 'work') }}">
+                        <img src="{{ asset('bundles/mdsrstudio/images/dincalc_plus_icon.png') }}"
+                             alt="{{ 'dincalcplus.alt' | trans }}"
+                             title="{{ 'dincalcplus.title' | trans }}">
                     </a>
                 </li>
             </ul>

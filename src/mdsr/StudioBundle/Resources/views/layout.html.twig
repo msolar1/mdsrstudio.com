@@ -2,7 +2,7 @@
 
 {% block head %}
     <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
-    <link rel="stylesheet" 
+    <link rel="stylesheet"
           href="{{ asset('bundles/mdsrStudio/css/studio.css') }}" />
 {% endblock %}
 
@@ -11,12 +11,12 @@
 {% block body %}
     <header>
         <section id="logo">
-            <img src="{{ asset('Bundles/mdsrstudio/images/mdsr_studio_logo.png') }}" 
+            <img src="{{ asset('bundles/mdsrstudio/images/mdsr_studio_logo.png') }}"
                  alt="mdsr studio logo image"
                  title="mdsr software studio by Mauricio Del Solar">
             <span>by Mauricio Del Solar</span>
         </section>
-        
+
         <nav>
             <ul id="menu">
                 {% if menuLinkOff == 'work' %}
@@ -30,7 +30,7 @@
                         </a>
                     </li>
                 {% endif %}
-                
+
                 {% if menuLinkOff == 'training' %}
                     <li class="menu-link-off">
                         {{ 'menu.training' | trans({}, 'header') }}
@@ -38,11 +38,11 @@
                 {% else %}
                     <li>
                         <a href="{{ path('mdsr_studio_training') }}">
-                          {{ 'menu.training' | trans({}, 'header') }}  
+                          {{ 'menu.training' | trans({}, 'header') }}
                         </a>
                     </li>
                 {% endif %}
-                
+
                 {% if menuLinkOff == 'hire me' %}
                     <li class="menu-link-off">
                         {{ 'menu.hireme' | trans({}, 'header') }}
@@ -54,7 +54,7 @@
                         </a>
                     </li>
                 {% endif %}
-                
+
                 <li>
                     <a href="#">blog</a>
                 </li>
@@ -85,7 +85,7 @@
 
             <article id="contact">
                 <h1>{{ 'footer.contactme' | trans({}, 'footer') }}</h1>
-                
+
                 <ul>
                     <li>
                         <a href="mailto:mdsr.pro@gmail.com">
@@ -102,7 +102,7 @@
 
             <article id="avaliability">
                 <h1>
-                    {{ 'footer.avaliability' | trans({}, 'footer') }} 
+                    {{ 'footer.avaliability' | trans({}, 'footer') }}
                     <em>{{ avaliabilityText }}</em>
                 </h1>
 
@@ -112,11 +112,11 @@
                             <th>
                                 0-2 {{ 'footer.days' | trans({}, 'footer') }}
                             </th>
-                            
+
                             <th>
                                 3-5 {{ 'footer.days' | trans({}, 'footer') }}
                             </th>
-                            
+
                             <th>
                                 6-10 {{ 'footer.days' | trans({}, 'footer') }}
                             </th>
@@ -137,38 +137,34 @@
                 <h1>{{ 'footer.followme' | trans({}, 'footer') }}</h1>
                 <ul>
                     <li>
-                        linkedin
-                        <a href="#">
-                            <img src="linkedin_logo.png" 
-                                 alt="Linkedin logo image."
-                                 title="Go to Mauricio linkedin account.">
+                        <img src="{{ asset('bundles/mdsrstudio/images/linkedin_icon.png') }}"
+                             alt="Linkedin logo image.">
+                        <a href="#" 
+                           title="Go to Mauricio linkedin account.">
+                           linkedin
                         </a>
                     </li>
                     <li>
-                        facebook
-                        <a href="#">
-                            <img src="facebook_logo.png" 
-                                 alt="Facebook logo image."
-                                 title="Go to mdsr studio facebook account.">
-                        </a>
+                       <img src="{{ asset('bundles/mdsrstudio/images/facebook_icon.png') }}"
+                            alt="Facebook logo image.">
+                        <a href="#" 
+                           title="Go to mdsr studio facebook account.">
+                           facebook
+                       </a>
                     </li>
                     <li>
-                        twitter
-                        <a href="#">
-                            <img src="twitter_logo.png" 
-                                 alt="Twitter logo image."
-                                 title="Go to Mauricio twitter account.">
+                        <img src="{{ asset('bundles/mdsrstudio/images/twitter_icon.png') }}"
+                             alt="Twitter logo image.">
+                        <a href="#" 
+                           title="Go to Mauricio twitter account.">
+                           twitter
                         </a>
                     </li>
                 </ul>
             </article>
 
             <article id="resume">
-                <p>
-                    <em>mdsr studio</em> 
-                    {{ 'footer.resume1' | trans({}, 'footer') }} <em>Mauricio 
-                    del Solar</em>{{ 'footer.resume2' | trans({}, 'footer') }}
-                </p>
+                <p>{{ 'footer.resume' | trans({}, 'footer') | raw }}</p>
 
                 <a href="{{ path('mdsr_studio_about') }}">
                     {{ 'footer.more' | trans({}, 'footer') }}
@@ -208,19 +204,19 @@
                 <a href="{{ path('mdsr_studio_work', { '_locale': 'en' }) }}">
                     English
                 </a>&nbsp;|&nbsp;
-                
+
                 <a href="{{ path('mdsr_studio_work', { '_locale': 'es' }) }}">
                     Español
                 </a>&nbsp;|&nbsp;
-                
+
                 <a href="{{ path('mdsr_studio_work', { '_locale': 'gl' }) }}">
                     Galego
                 </a>
             </section>
-            
+
             <p>
-                &copy; 2013 - mdsr studio - 
-                {{ 'footer.rights' | trans({}, 'footer') }}
+				&copy; 2013 - mdsr studio -
+				{{ 'footer.rights' | trans({}, 'footer') }}
             </p>
         </section>
     </footer>

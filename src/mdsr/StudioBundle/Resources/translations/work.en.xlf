@@ -19,9 +19,7 @@
 
             <trans-unit id="4">
                 <source>dincalc.title</source>
-                <target>
-                    Dincalc: the discount/increment easy calculator.
-                </target>
+                <target>Dincalc: the discount/increment easy calculator.</target>
             </trans-unit>
 
             <trans-unit id="5">
@@ -51,9 +49,7 @@
 
             <trans-unit id="10">
                 <source>dincalcplus.title</source>
-                <target>
-                    Dincalc Plus: more options, more easy, more DinCalc.
-                </target>
+                <target>Dincalc Plus: more options, more easy, more DinCalc.</target>
             </trans-unit>
         </body>
     </file>

@@ -33,51 +33,41 @@
             </trans-unit>
 
             <trans-unit id="7">
-                <source>footer.resume1</source>
-                <target>
-                    es la web personal del desarrollador y formador freelance
-                </target>
+                <source>footer.resume</source>
+                <target>&lt;em&gt;mdsr studio&lt;/em&gt; es la web personal del desarrollador y formador freelance &lt;em&gt;Mauricio del Solar&lt;/em&gt;. En ella puedes encontrar información sobre él, sus trabajos, sus cursos, etc.</target>
             </trans-unit>
 
             <trans-unit id="8">
-                <source>footer.resume2</source>
-                <target>
-                    . En ella puedes encontrar información sobre él, sus trabajos, sus 
-                    cursos, etc.
-                </target>
-            </trans-unit>
-
-            <trans-unit id="9">
                 <source>footer.more</source>
                 <target>Saber más...</target>
             </trans-unit>
 
-            <trans-unit id="10">
+            <trans-unit id="9">
                 <source>footer.stats.code</source>
                 <target>lineas de código escritas hoy.</target>
             </trans-unit>
 
-            <trans-unit id="11">
+            <trans-unit id="10">
                 <source>footer.stats.diapers</source>
                 <target>pañales cambiados esta semana.</target>
             </trans-unit>
 
-            <trans-unit id="12">
+            <trans-unit id="11">
                 <source>footer.stats.courses</source>
                 <target>horas de cursos este año.</target>
             </trans-unit>
 
-            <trans-unit id="13">
+            <trans-unit id="12">
                 <source>footer.stats.songs</source>
                 <target>canciones escuchadas hoy..</target>
             </trans-unit>
 
-            <trans-unit id="14">
+            <trans-unit id="13">
                 <source>footer.stats.bike</source>
                 <target>km. en bici esta semana.</target>
             </trans-unit>
 
-            <trans-unit id="15">
+            <trans-unit id="14">
                 <source>footer.rights</source>
                 <target>Todos los derechos reservados.</target>
             </trans-unit>
