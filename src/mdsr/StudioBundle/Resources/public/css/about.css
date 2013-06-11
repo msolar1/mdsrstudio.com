@@ -1,0 +1,53 @@
+section#content h1 {
+    font-family: Raleway, sans-serif;
+    font-weight: 100;
+    font-size: 2.25em; /* 36px / 16px */
+    margin: 0.9375em 0; /* 15px / 16px */
+}
+
+
+section#content article p {
+    font-size: 1.125em;
+    color: #666;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+
+/*
+ * RESPONSIVENESS
+ */
+
+@media screen and (min-width: 320px) {
+	section#content article {
+	    width: 93.333333333333%; /* 560/600 */
+	    margin: 5% auto; /* 30/600 */
+		padding-bottom: 5%; /* 30/600 */
+	}
+
+	article#left {
+	    float: none;
+		background: transparent url('/bundles/mdsrstudio/images/training-separator.png') no-repeat center bottom;
+	}
+
+	article#right {
+	    float: none;
+	}	
+}
+
+@media screen and (min-width: 768px) {
+	section#content article {
+	    width: 36.458333333333%; /* 350/960 */
+	    margin: 3.125% 6.770833333333% 0; /* 30 y 65 / 960 */
+		padding-bottom: 0;
+	}
+
+	article#left {
+	    float: left;
+		background: transparent;
+	}
+
+	article#right {
+	    float: right;
+	}
+}

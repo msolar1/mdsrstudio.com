@@ -31,7 +31,7 @@ class DefaultController extends Controller
     {
         return $this->render('mdsrStudioBundle:Default:hire.html.twig', 
                              array(
-                                'menuLinkOff' => 'hireme',
+                                'menuLinkOff' => 'hire',
                                 'avaliabilityText' => 'busy'));
     }
 

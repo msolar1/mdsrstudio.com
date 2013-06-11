@@ -19,7 +19,7 @@
 
             <trans-unit id="4">
                 <source>footer.avaliability.busy</source>
-                <target>Ocupado</target>
+                <target>ocupado</target>
             </trans-unit>
 
             <trans-unit id="5">
@@ -59,7 +59,7 @@
 
             <trans-unit id="12">
                 <source>footer.stats.songs</source>
-                <target>canciones escuchadas hoy..</target>
+                <target>canciones escuchadas hoy.</target>
             </trans-unit>
 
             <trans-unit id="13">

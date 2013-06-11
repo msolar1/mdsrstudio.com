@@ -54,7 +54,7 @@
 
             <trans-unit id="11">
                 <source>skills.p1</source>
-                <target>UX, Objective-C, iOS, Cocoa, Git, PHP5, Symfony2, HTML5, CSS3, Javascript, jQuery, MySQL.</target>
+                <target>UX, Objective-C, iOS, Cocoa, Git, PHP5, MySQL, Symfony2, Responsive Web Design, HTML5, CSS3, Javascript, jQuery.</target>
             </trans-unit>
         </body>
     </file>

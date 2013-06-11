@@ -1,23 +1,16 @@
 {% extends "::base.html.twig" %}
 
-{% block head %}
-    <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
-    <link rel="stylesheet"
-          href="{{ asset('bundles/mdsrStudio/css/studio.css') }}" />
-{% endblock %}
-
 {% block title 'mdsr Studio Web' %}
 
 {% block body %}
     <header>
-        <section id="logo">
-            <img src="{{ asset('bundles/mdsrstudio/images/mdsr_studio_logo.png') }}"
-                 alt="mdsr studio logo image"
-                 title="mdsr software studio by Mauricio Del Solar">
-            <span>by Mauricio Del Solar</span>
-        </section>
+        <img src="{{ asset('bundles/mdsrstudio/images/mdsr_studio_logo.png') }}"
+             alt="mdsr studio logo image"
+             title="mdsr software studio by Mauricio Del Solar">
 
         <nav>
+            <p>by Mauricio Del Solar</p>
+
             <ul id="menu">
                 {% if menuLinkOff == 'work' %}
                     <li class="menu-link-off">
@@ -43,7 +36,7 @@
                     </li>
                 {% endif %}
 
-                {% if menuLinkOff == 'hire me' %}
+                {% if menuLinkOff == 'hire' %}
                     <li class="menu-link-off">
                         {{ 'menu.hireme' | trans({}, 'header') }}
                     </li>
@@ -54,10 +47,6 @@
                         </a>
                     </li>
                 {% endif %}
-
-                <li>
-                    <a href="#">blog</a>
-                </li>
 
                 {% if menuLinkOff == 'about' %}
                     <li class="menu-link-off">
@@ -80,9 +69,9 @@
     </section>
 
     <footer>
-        <section id="links">
-            <h1>{{ 'footer.contact' | trans({}, 'footer') }}</h1>
+        <h1>{{ 'footer.contact' | trans({}, 'footer') }}</h1>
 
+        <section id="links">
             <article id="contact">
                 <h1>{{ 'footer.contactme' | trans({}, 'footer') }}</h1>
 
@@ -92,6 +81,7 @@
                             mdsr.pro@gmail.com
                         </a>
                     </li>
+
                     <li>
                         <a href="mailto:support@mdsrstudio.com">
                             support@mdsrstudio.com
@@ -109,24 +99,28 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>
+                            <th style="text-align: left;">
                                 0-2 {{ 'footer.days' | trans({}, 'footer') }}
                             </th>
 
-                            <th>
+                            <th style="text-align: center;">
                                 3-5 {{ 'footer.days' | trans({}, 'footer') }}
                             </th>
 
-                            <th>
+                            <th style="text-align: right;">
                                 6-10 {{ 'footer.days' | trans({}, 'footer') }}
                             </th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
                             <td colspan="3">
-                                <div id="bg-avaliability-bar"></div>
-                                <div id="avaliability-bar"></div>
+                                <div id="bg-avaliability-bar">
+                                    <div id="avaliability-bar"
+                                         style="width: 40%;"></div>
+                                </div>
+                                
                             </td>
                         </tr>
                     </tbody>
@@ -135,30 +129,27 @@
 
             <article id="follow">
                 <h1>{{ 'footer.followme' | trans({}, 'footer') }}</h1>
+
                 <ul>
                     <li>
-                        <img src="{{ asset('bundles/mdsrstudio/images/linkedin_icon.png') }}"
-                             alt="Linkedin logo image.">
-                        <a href="#" 
-                           title="Go to Mauricio linkedin account.">
-                           linkedin
-                        </a>
+                        
+                        <a href="#" title="Go to Mauricio linkedin account.">
+	                        <img src="{{ asset('bundles/mdsrstudio/images/linkedin_icon.png') }}"
+	                             alt="Linkedin logo image.">linkedin</a>
                     </li>
+
                     <li>
-                       <img src="{{ asset('bundles/mdsrstudio/images/facebook_icon.png') }}"
-                            alt="Facebook logo image.">
-                        <a href="#" 
-                           title="Go to mdsr studio facebook account.">
-                           facebook
-                       </a>
+                       
+                        <a href="#" title="Go to mdsr studio facebook account.">
+							<img src="{{ asset('bundles/mdsrstudio/images/facebook_icon.png') }}"
+							     alt="Facebook logo image.">facebook</a>
                     </li>
+
                     <li>
-                        <img src="{{ asset('bundles/mdsrstudio/images/twitter_icon.png') }}"
-                             alt="Twitter logo image.">
-                        <a href="#" 
-                           title="Go to Mauricio twitter account.">
-                           twitter
-                        </a>
+                        
+                        <a href="#" title="Go to Mauricio twitter account.">
+	                        <img src="{{ asset('bundles/mdsrstudio/images/twitter_icon.png') }}"
+	                             alt="Twitter logo image.">twitter</a>
                     </li>
                 </ul>
             </article>
@@ -174,50 +165,36 @@
 
         <section id="white">
             <section id="funny-stats">
-                <div class="funny_stat">
-                    <strong>476</strong>
-                    <p>{{ 'footer.stats.code' | trans({}, 'footer') }}</p>
-                </div>
-
-                <div class="funny_stat">
-                    <strong>12</strong>
-                    <p>{{ 'footer.stats.diapers' | trans({}, 'footer') }}</p>
-                </div>
-
-                <div class="funny_stat">
-                    <strong>308</strong>
-                    <p>{{ 'footer.stats.courses' | trans({}, 'footer') }}</p>
-                </div>
-
-                <div class="funny_stat">
-                    <strong>5</strong>
-                    <p>{{ 'footer.stats.songs' | trans({}, 'footer') }}</p>
-                </div>
-
-                <div class="funny_stat">
-                    <strong>73</strong>
-                    <p>{{ 'footer.stats.bike' | trans({}, 'footer') }}</p>
-                </div>
-            </section>
+				<p><strong>476</strong> {{ 'footer.stats.code' | trans({}, 'footer') }}</p>
+                <p><strong>12</strong> {{ 'footer.stats.diapers' | trans({}, 'footer') }}</p>
+				<p><strong>308</strong> {{ 'footer.stats.courses' | trans({}, 'footer') }}</p>
+				<p><strong>5</strong> {{ 'footer.stats.songs' | trans({}, 'footer') }}</p>
+				<p><strong>73</strong> {{ 'footer.stats.bike' | trans({}, 'footer') }}</p>
+            </section> 
 
             <section id="language">
-                <a href="{{ path('mdsr_studio_work', { '_locale': 'en' }) }}">
-                    English
-                </a>&nbsp;|&nbsp;
+                {% if app.request.locale == 'en' %}
+                    <span>English</span>
+                {% else %}
+                    <a href="{{ path('mdsr_studio_work', { '_locale': 'en' }) }}">English</a>
+                {% endif %}
+                &nbsp;|&nbsp;
 
-                <a href="{{ path('mdsr_studio_work', { '_locale': 'es' }) }}">
-                    Español
-                </a>&nbsp;|&nbsp;
+                {% if app.request.locale == 'es' %}
+                    <span>Español</span>
+                {% else %}
+                    <a href="{{ path('mdsr_studio_work', { '_locale': 'es' }) }}">Español</a>
+                {% endif %}
+                &nbsp;|&nbsp;
 
-                <a href="{{ path('mdsr_studio_work', { '_locale': 'gl' }) }}">
-                    Galego
-                </a>
+                {% if app.request.locale == 'gl' %}
+                    <span>Galego</span>
+                {% else %}
+                    <a href="{{ path('mdsr_studio_work', { '_locale': 'gl' }) }}">Galego</a>
+                {% endif %}
+
+                <p>&copy; 2013 - mdsr studio - {{ 'footer.rights' | trans({}, 'footer') }}</p>
             </section>
-
-            <p>
-				&copy; 2013 - mdsr studio -
-				{{ 'footer.rights' | trans({}, 'footer') }}
-            </p>
         </section>
     </footer>
 {% endblock %}

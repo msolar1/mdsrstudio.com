@@ -2,11 +2,18 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
         <link rel="icon" 
+              sizes="16x16" 
               type="image/x-icon" 
               href="{{ asset('favicon.ico') }}" />
+        {% block stylesheets %}
+            <link rel="stylesheet"
+                  href="{{ asset('bundles/mdsrStudio/css/reset.css') }}" />
+            <link rel="stylesheet"
+                  href="{{ asset('bundles/mdsrStudio/css/default.css') }}" />
+        {% endblock %}
     </head>
     <body>
         <div id="main-container">{% block body %}{% endblock %}</div>

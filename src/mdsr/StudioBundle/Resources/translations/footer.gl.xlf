@@ -14,7 +14,7 @@
 
             <trans-unit id="3">
                 <source>footer.avaliability</source>
-                <target>A miña dispoñibilidade:</target>
+                <target>A Miña Dispoñibilidade:</target>
             </trans-unit>
 
             <trans-unit id="4">
@@ -33,8 +33,8 @@
             </trans-unit>
 
             <trans-unit id="7">
-                <source>footer.resume1</source>
-                <target>&lt;em&gt;mdsr studio&lt;/em&gt; é a web personal do programador e formador &lt;em&gt;Mauricio del Solar&lt;/em&gt; . Nela podes atopar información sobre él, o seu traballo, os seus cursos, etc.</target>
+                <source>footer.resume</source>
+                <target>&lt;em&gt;mdsr studio&lt;/em&gt; é a web personal do programador e formador &lt;em&gt;Mauricio del Solar&lt;/em&gt;. Nela podes atopar información sobre él, o seu traballo, os seus cursos, etc.</target>
             </trans-unit>
 
             <trans-unit id="8">
@@ -49,7 +49,7 @@
 
             <trans-unit id="10">
                 <source>footer.stats.diapers</source>
-                <target>cuieros cambiados esta semana.</target>
+                <target>cueiros cambiados esta semana.</target>
             </trans-unit>
 
             <trans-unit id="11">

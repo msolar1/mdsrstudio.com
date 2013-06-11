@@ -1,22 +1,33 @@
 {% extends "mdsrStudioBundle::layout.html.twig" %}
 {% trans_default_domain 'about' %}
 
-{% block content %}
-    <h1>{{ 'hello' | trans({}, 'about') }}</h1>
+{% block stylesheets %}
+    {{ parent() }}
 
-    <img src="{{ asset('bundles/mdsrstudio/images/me_myself.png') }}" 
-		 alt="{{ 'image.alt' | trans }}" 
-		 title="{{ 'image.title' | trans }}">
+    <link rel="stylesheet"
+          href="{{ asset('bundles/mdsrStudio/css/about.css') }}" />
+{% endblock %}
+
+{% block content %}
+    <h1>{{ 'hello' | trans }}</h1>
+
+    <figure>
+        <img src="{{ asset('bundles/mdsrstudio/images/me_myself.png') }}" 
+             alt="{{ 'image.alt' | trans }}" 
+    		 title="{{ 'image.title' | trans }}">
+    </figure>
     
-    <article class="hello-column">
+    <article id="left">
         <p>{{ 'hello.p1' | trans | raw }}</p>
         <p>{{ 'hello.p2' | trans | raw }}</p>
     </article>
 
-    <article class="hello-column">
+    <article id="right">
         <p>{{ 'hello.p3' | trans | raw }}</p>
         <p>{{ 'hello.p4' | trans | raw }}</p>
         <p>{{ 'hello.p5' | trans | raw }}</p>
         <p>{{ 'hello.p6' | trans | raw }}</p>
     </article>
+	
+	<div style="clear: both;"></div>
 {% endblock %}

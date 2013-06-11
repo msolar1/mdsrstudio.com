@@ -9,12 +9,12 @@
 
             <trans-unit id="2">
                 <source>footer.contactme</source>
-                <target>Contact me</target>
+                <target>Contact Me</target>
             </trans-unit>
 
             <trans-unit id="3">
                 <source>footer.avaliability</source>
-                <target>My avaliability:</target>
+                <target>My Avaliability:</target>
             </trans-unit>
 
             <trans-unit id="4">
@@ -29,7 +29,7 @@
 
             <trans-unit id="6">
                 <source>footer.followme</source>
-                <target>Follow me</target>
+                <target>Follow Me</target>
             </trans-unit>
 
             <trans-unit id="7">

@@ -1,0 +1,126 @@
+section#content h1 {
+    font-family: Raleway, sans-serif;
+    font-weight: 100;
+	margin-top: 2.5em; /* 40px / 16px */
+}
+
+section#content img {
+    padding-bottom: 3.125em; /* 50px */
+}
+
+section#content ul {
+    margin: 0 auto;
+}
+
+section#content article {
+    clear: both;
+    background: transparent url('/bundles/mdsrstudio/images/training-separator.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+
+section#content article img {
+    float: left;
+    padding: 0 1.333333333333% 13.333333333334% 0; /* 10px y 50px / 750px */
+}
+
+section#content article h1 {
+    font-weight: 400;
+    font-size: 1.3125em; /* 21px / 16px */
+    margin: 0.3125em 0; /* 5px / 16px */
+}
+
+section#content article p {
+    font-size: 0.875em; /* 14px / 16px */
+	font-weight: 200;
+    margin-bottom: 1em;
+    color: #666;
+}
+
+section#content p.course-data {
+    font-style: italic;
+    padding-bottom: 1.875em; /* 30px / 16px */
+    color: #999;
+}
+
+section#content article a {
+    color: #999;
+    text-decoration: underline;
+}
+
+section#content article a:hover {
+    color: #f33;
+    text-decoration: none;
+}
+
+
+/*
+ * RESPONSIVENESS
+ */
+
+@media screen and (min-width: 320px) {
+	section#content h1 {
+	    font-size: 1.25em; /* 20 / 16px */
+	}
+	
+	section#content img {
+	    width: 280px;
+	}
+	
+	section#content ul {
+	    width: 93.333333333333%; /* 560px / 600px */
+	}
+
+	section#content article img {
+		display: none;
+		width: 64px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	section#content h1 {
+	    font-size: 1.5em; /* 24 / 16px */
+	}
+	
+	section#content img {
+	    width: 400px;
+	}
+
+	section#content article img {
+		display: block;
+		width: 44px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	section#content h1 {
+	    font-size: 1.75em; /* 28 / 16px */
+	}
+	
+	section#content img {
+	    width: 450px;
+	}
+
+	section#content article img {
+		width: 60px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	section#content h1 {
+	    font-size: 2.25em; /* 36 / 16px */
+	}
+	
+	section#content img {
+	    width: 550px;
+	}
+	
+	section#content ul {
+	    width: 78.125%; /* 750px / 960px */
+	}
+
+	section#content article img {
+		width: 64px;
+	}
+}

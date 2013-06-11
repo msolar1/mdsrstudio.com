@@ -1,6 +1,13 @@
 {% extends "mdsrStudioBundle::layout.html.twig" %}
 {% trans_default_domain 'training' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet"
+          href="{{ asset('bundles/mdsrStudio/css/training.css') }}" />
+{% endblock %}
+
 {% block content %}
 <h1>{{ 'last.courses' | trans }}</h1>
 
@@ -14,18 +21,16 @@
         {% set endDate = course.endDate|date('Y') %}
 
         <li>
-            <article class="course">
+            <article>
                 <img src="{{ asset('bundles/mdsrstudio/images/' ~ course.image) }}" 
                      alt="Course logo image" 
                      title="Course logo image">
                 <h1>{{ course.title }}</h1>
-                <p class="course-content">{{ course.content }}</p>
-                <p>
+
+                <p>{{ course.content }}</p>
+                <p class="course-data">
                     {{ 'organizer' | trans }}
-                    <a href="{{ course.organizerLink }}">
-                        {{ course.organizer }}
-                    </a>-
-                    {{ course.place }}
+                    <a href="{{ course.organizerLink }}">{{ course.organizer }}</a> - {{ course.place }}
                     {% if startDate == endDate %}
                           {{ startDate }}
                     {% else %}
