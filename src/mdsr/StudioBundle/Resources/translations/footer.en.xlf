@@ -71,6 +71,21 @@
                 <source>footer.rights</source>
                 <target>All rights reserved.</target>
             </trans-unit>
+			
+            <trans-unit id="15">
+                <source>footer.linkedin</source>
+                <target>Checkout Mauricio's linkedin.</target>
+            </trans-unit>
+			
+            <trans-unit id="16">
+                <source>footer.facebook</source>
+                <target>Checkout mdsr software studio facebook page.</target>
+            </trans-unit>
+			
+            <trans-unit id="17">
+                <source>footer.twitter</source>
+                <target>Checkout Mauricio's twitter.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

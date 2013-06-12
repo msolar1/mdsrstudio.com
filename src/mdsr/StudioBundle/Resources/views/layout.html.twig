@@ -133,22 +133,28 @@
                 <ul>
                     <li>
                         
-                        <a href="#" title="Go to Mauricio linkedin account.">
-	                        <img src="{{ asset('bundles/mdsrstudio/images/linkedin_icon.png') }}"
+                        <a href="http://es.linkedin.com/in/mauriciodelsolar/" 
+						   target="_blank"
+						   title="{{ 'footer.linkedin' | trans({}, 'footer') }}">
+	                       <img src="{{ asset('bundles/mdsrstudio/images/linkedin_icon.png') }}"
 	                             alt="Linkedin logo image.">linkedin</a>
                     </li>
 
                     <li>
                        
-                        <a href="#" title="Go to mdsr studio facebook account.">
-							<img src="{{ asset('bundles/mdsrstudio/images/facebook_icon.png') }}"
-							     alt="Facebook logo image.">facebook</a>
+                        <a href="#" 
+						   target="_blank" 
+						   title="{{ 'footer.facebook' | trans({}, 'footer') }}">
+						   <img src="{{ asset('bundles/mdsrstudio/images/facebook_icon.png') }}"
+						   		alt="Facebook logo image.">facebook</a>
                     </li>
 
                     <li>
                         
-                        <a href="#" title="Go to Mauricio twitter account.">
-	                        <img src="{{ asset('bundles/mdsrstudio/images/twitter_icon.png') }}"
+                        <a href="https://twitter.com/mauricio_myself"
+						   target="_blank"
+						   title="{{ 'footer.twitter' | trans({}, 'footer') }}">
+	                       <img src="{{ asset('bundles/mdsrstudio/images/twitter_icon.png') }}"
 	                             alt="Twitter logo image.">twitter</a>
                     </li>
                 </ul>
@@ -165,11 +171,21 @@
 
         <section id="white">
             <section id="funny-stats">
-				<p><strong>476</strong> {{ 'footer.stats.code' | trans({}, 'footer') }}</p>
-                <p><strong>12</strong> {{ 'footer.stats.diapers' | trans({}, 'footer') }}</p>
-				<p><strong>308</strong> {{ 'footer.stats.courses' | trans({}, 'footer') }}</p>
-				<p><strong>5</strong> {{ 'footer.stats.songs' | trans({}, 'footer') }}</p>
-				<p><strong>73</strong> {{ 'footer.stats.bike' | trans({}, 'footer') }}</p>
+				<p>
+					<strong>{{ code_lines }}</strong>
+					{{ 'footer.stats.code' | trans({}, 'footer') }}</p>
+                <p>
+					<strong>{{ diapers }}</strong>
+					{{ 'footer.stats.diapers' | trans({}, 'footer') }}</p>
+				<p>
+					<strong>{{ courses_hours }}</strong>
+					{{ 'footer.stats.courses' | trans({}, 'footer') }}</p>
+				<p>
+					<strong>{{ songs }}</strong>
+					{{ 'footer.stats.songs' | trans({}, 'footer') }}</p>
+				<p>
+					<strong>{{ bike_km }}</strong>
+					{{ 'footer.stats.bike' | trans({}, 'footer') }}</p>
             </section> 
 
             <section id="language">
