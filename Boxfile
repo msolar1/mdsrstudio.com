@@ -24,7 +24,7 @@ web1:
     
     after_build:
         - "cp app/config/parameters_pagoda.yml app/config/parameters.yml"
-        - "curl -s http://getcomposer.org/installer | php -- --quiet; php composer.phar install -n"
+        - "curl -s http://getcomposer.org/installer | php --quiet; php composer.phar install -n"
         - "php app/console --env=prod --no-debug assetic:dump -n"
         - "php vendor/symfony/symfony/src/Symfony/Component/Locale/Resources/data/build-data.php"
     before_deploy:
