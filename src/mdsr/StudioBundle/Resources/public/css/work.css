@@ -7,7 +7,6 @@ section#showroom {
 }
 
 section#showroom ul {
-    width: 78.75%; /* 630/800 */
 	margin: 0 auto;
 }
 
@@ -69,14 +68,24 @@ section#showroom li {
 
 @media screen and (min-width: 768px) {
 	section#content img {
-	    width: 800px;
+	    width: 720px;
 	}
 	
 	section#showroom ul {
    		width: 65.625%; /* 630px / 960px */
   	}
 
-	section#showroom img {
-		width: 128px;
+    section#showroom img {
+        width: 128px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+	section#content img {
+	    width: 800px;
 	}
+
+    section#showroom img {
+        width: 128px;
+    }
 }

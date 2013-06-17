@@ -20,13 +20,12 @@ section#content article h1 {
     font-size: 1.25em; /* 20/16 */
     text-transform: uppercase;
     margin-bottom: 0.625em; /* 10px / 16px */
-    color: #ccc;
+    color: #bbb;
 }
 
 section#content article p {
 	font-size: 1.125em; /* 18px / 16px */
     margin-bottom: 1em; /* 16px / 16px */
-    color: #666;
 }
 
 article#skills {

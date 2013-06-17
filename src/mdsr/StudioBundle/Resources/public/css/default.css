@@ -53,7 +53,7 @@ header nav {
 header nav p {
     font-family: Roboto, sans-serif;
     font-weight: 100;
-    color: #999;
+    color: #666;
 }
 
 header li {
@@ -112,7 +112,7 @@ section#links h1 {
     text-align: left;
 	text-transform: uppercase;
     padding: 0 0 0.75em; /* 15/20 */
-    color: #ccc;
+    color: #999;
 }
 
 section#links a {
@@ -222,7 +222,7 @@ section#language {
 
 section#language,
 section#language a {
-    color: #ccc;
+    color: #bbb;
 }
 
 section#language span {
@@ -234,7 +234,7 @@ section#language p {
 	text-transform: none;
     font-weight: 100;
     padding-top: 1.25em;
-    color: #ccc;
+    color: #999;
 }
 
 
@@ -358,7 +358,7 @@ section#language p {
 	}
 
 	header a {
-	    color: #ccc;
+	    color: #bbb;
 	}
 	
 	header li {

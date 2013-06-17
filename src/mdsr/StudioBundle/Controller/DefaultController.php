@@ -18,7 +18,7 @@ class DefaultController extends Controller
     {
         $courses = $this->getDoctrine()
                         ->getRepository('mdsrStudioBundle:Course')
-                        ->findAll();
+                        ->findBy(array(), array('endDate' => 'DESC'));
 
         return $this->render('mdsrStudioBundle:Default:training.html.twig',
                              array(
