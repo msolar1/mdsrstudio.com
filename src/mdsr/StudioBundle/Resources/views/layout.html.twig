@@ -93,7 +93,14 @@
             <article id="avaliability">
                 <h1>
                     {{ 'footer.avaliability' | trans({}, 'footer') }}
-                    <em>{{ avaliabilityText }}</em>
+                    
+                    {% if avaliability == 1 %}
+                        <em>{{ 'footer.avaliability.high' | trans({}, 'footer') }}</em>
+                    {% elseif avaliability == 2 %}
+                        <em>{{ 'footer.avaliability.medium' | trans({}, 'footer') }}</em>
+                    {% elseif avaliability == 3 %}
+                        <em>{{ 'footer.avaliability.low' | trans({}, 'footer') }}</em>
+                    {% endif %}
                 </h1>
 
                 <table>
@@ -117,8 +124,13 @@
                         <tr>
                             <td colspan="3">
                                 <div id="bg-avaliability-bar">
-                                    <div id="avaliability-bar"
-                                         style="width: 40%;"></div>
+                                    {% if avaliability == 1 %}
+                                        <div id="avaliability-bar" style="width: 5%;"></div>
+                                    {% elseif avaliability == 2 %}
+                                        <div id="avaliability-bar" style="width: 45%;"></div>
+                                    {% elseif avaliability == 3 %}
+                                        <div id="avaliability-bar" style="width: 85%;"></div>
+                                    {% endif %}
                                 </div>
                                 
                             </td>
@@ -209,7 +221,7 @@
                     <a href="{{ path('mdsr_studio_work', { '_locale': 'gl' }) }}">Galego</a>
                 {% endif %}
 
-                <p>&copy; 2013 - mdsr studio - {{ 'footer.rights' | trans({}, 'footer') }}</p>
+                <p>&copy; 2013 - mdsr studio - {{ site_version }} - {{ 'footer.rights' | trans({}, 'footer') }}</p>
             </section>
         </section>
     </footer>

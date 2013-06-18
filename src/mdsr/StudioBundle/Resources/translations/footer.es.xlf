@@ -86,6 +86,21 @@
                 <source>footer.twitter</source>
                 <target>Écha un vistazo al twitter de Mauricio</target>
             </trans-unit>
+			
+            <trans-unit id="18">
+                <source>footer.avaliability.high</source>
+                <target>Alta</target>
+            </trans-unit>
+			
+            <trans-unit id="19">
+                <source>footer.avaliability.medium</source>
+                <target>Media</target>
+            </trans-unit>
+			
+            <trans-unit id="20">
+                <source>footer.avaliability.low</source>
+                <target>Baja</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

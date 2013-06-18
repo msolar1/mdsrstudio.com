@@ -8,10 +8,8 @@ class DefaultController extends Controller
 {
     public function workAction()
     {
-        return $this->render('mdsrStudioBundle:Default:work.html.twig',
-                             array(
-                                'menuLinkOff' => 'work',
-                                'avaliabilityText' => 'busy'));
+        return $this->render('mdsrStudioBundle:Default:work.html.twig', 
+                                array('menuLinkOff' => 'work'));
     }
 
     public function trainingAction()
@@ -22,24 +20,20 @@ class DefaultController extends Controller
 
         return $this->render('mdsrStudioBundle:Default:training.html.twig',
                              array(
-                                'menuLinkOff' => 'training',
-                                'avaliabilityText' => 'busy',
-                                'courses' => $courses));
+                                 'menuLinkOff' => 'training', 
+                                 'courses' => $courses)
+                             );
     }
 
     public function hireAction()
     {
         return $this->render('mdsrStudioBundle:Default:hire.html.twig', 
-                             array(
-                                'menuLinkOff' => 'hire',
-                                'avaliabilityText' => 'busy'));
+                                 array('menuLinkOff' => 'hire'));
     }
 
     public function aboutAction()
     {
         return $this->render('mdsrStudioBundle:Default:about.html.twig',
-                             array(
-                                'menuLinkOff' => 'about',
-                                'avaliabilityText' => 'busy'));
+                                 array('menuLinkOff' => 'about'));
     }
 }

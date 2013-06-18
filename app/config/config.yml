@@ -25,11 +25,13 @@ twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
     globals:
+        avaliability:  2
         code_lines:    '476'
         diapers:       '12'
         courses_hours: '308'
         songs:         '5'
         bike_km:       '51'
+        site_version:  'v.1.0.2'
 
 # Assetic Configuration
 assetic:
