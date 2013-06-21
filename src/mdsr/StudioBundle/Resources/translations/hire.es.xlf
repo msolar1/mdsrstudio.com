@@ -56,6 +56,11 @@
                 <source>skills.p1</source>
                 <target>UX, Objective-C, iOS, Cocoa, Git, PHP5, MySQL, Symfony2, Responsive Web Design, HTML5, CSS3, Javascript, jQuery.</target>
             </trans-unit>
+            
+            <trans-unit id="12">
+                <source>title</source>
+                <target>mdsr studio - Mauricio del Solar - contrátame</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

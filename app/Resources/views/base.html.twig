@@ -1,9 +1,15 @@
+{% trans_default_domain 'base' %}
+
 <!DOCTYPE html>
-<html>
+<html lang="{{ 'language' | trans }}">
     <head>
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        
         <meta charset="UTF-8" />
 		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="description" content="{{ 'description.content' | trans }}">
+        <meta name="keywords" content="{{ 'keywords.content' | trans }}">
+        
         <link rel="icon" 
               sizes="16x16" 
               type="image/x-icon" 
@@ -15,6 +21,7 @@
                   href="{{ asset('bundles/mdsrstudio/css/default.css') }}" />
         {% endblock %}
     </head>
+    
     <body>
         <div id="main-container">{% block body %}{% endblock %}</div>
 

@@ -51,6 +51,11 @@
                 <source>dincalcplus.title</source>
                 <target>Dincalc Plus: more options, more easy, more DinCalc.</target>
             </trans-unit>
+            
+            <trans-unit id="11">
+                <source>title</source>
+                <target>mdsr studio - Mauricio del Solar - work</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

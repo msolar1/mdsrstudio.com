@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>language</source>
+                <target>en</target>
+            </trans-unit>
+            
+            <trans-unit id="2">
+                <source>description.content</source>
+                <target>mdsr studio the personal web site of Mauricio Del Solar, iOS and web developer and information tecnologies trainer.</target>
+            </trans-unit>
+            
+            <trans-unit id="3">
+                <source>keywords.content</source>
+                <target>mauricio del solar, programmer, developer, trainer, consultant, ios, web, courses, php, html5, css, jquery, javascript, responsive web, user experience, user interface</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

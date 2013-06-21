@@ -31,7 +31,7 @@ twig:
         courses_hours: '308'
         songs:         '5'
         bike_km:       '51'
-        site_version:  'v.1.0.2'
+        site_version:  'v.1.0.3'
 
 # Assetic Configuration
 assetic:

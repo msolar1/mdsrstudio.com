@@ -47,6 +47,11 @@
                 <source>hello.p6</source>
                 <target>I will be happy to work with you.</target>
             </trans-unit>
+            
+            <trans-unit id="12">
+                <source>title</source>
+                <target>mdsr studio - Mauricio del Solar - about</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

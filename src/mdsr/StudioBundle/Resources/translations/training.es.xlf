@@ -16,6 +16,11 @@
                 <source>organizer</source>
                 <target>Organizador: </target>
             </trans-unit>
+            
+            <trans-unit id="4">
+                <source>title</source>
+                <target>mdsr studio - Mauricio del Solar - cursos</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

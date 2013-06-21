@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="es" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>language</source>
+                <target>es</target>
+            </trans-unit>
+            
+            <trans-unit id="2">
+                <source>description.content</source>
+                <target>mdsr studio es la web personal de Mauricio Del Solar, desarrollador iOS y web y formador en tecnologías de la información.</target>
+            </trans-unit>
+            
+            <trans-unit id="3">
+                <source>keywords.content</source>
+                <target>mauricio del solar, programador, desarrollador, formador, consultor, ios, web, cursos, php, html5, css, jquery, javascript, responsive web, experiencia de usuario, interfaz de usuario</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

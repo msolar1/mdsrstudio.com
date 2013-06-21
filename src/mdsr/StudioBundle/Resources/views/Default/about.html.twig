@@ -1,6 +1,10 @@
 {% extends "mdsrStudioBundle::layout.html.twig" %}
 {% trans_default_domain 'about' %}
 
+{% block title %}
+    {{ 'title' | trans }}
+{% endblock %}
+
 {% block stylesheets %}
     {{ parent() }}
 
